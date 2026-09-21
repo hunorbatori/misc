@@ -1,0 +1,98 @@
+{user}@ryzen-bazzite:/var/home/{user}$ cat /etc/os/release
+cat: /etc/os/release: No such file or directory
+{user}@ryzen-bazzite:/var/home/{user}$ cat /etc/os-release
+NAME="Bazzite"
+VERSION="44.20260921.0 (Kinoite)"
+RELEASE_TYPE=stable
+ID=bazzite
+ID_LIKE="fedora"
+VERSION_ID=44
+VERSION_CODENAME="Kinoite"
+PRETTY_NAME="Bazzite"
+ANSI_COLOR="0;38;2;138;43;226"
+LOGO=bazzite-logo
+CPE_NAME="cpe:/o:universal-blue:bazzite:44"
+DEFAULT_HOSTNAME="bazzite"
+HOME_URL="https://bazzite.gg"
+DOCUMENTATION_URL="https://docs.bazzite.gg"
+SUPPORT_URL="https://discord.bazzite.gg"
+BUG_REPORT_URL="https://github.com/ublue-os/bazzite/issues/"
+SUPPORT_END=2027-05-19
+VARIANT="Kinoite"
+VARIANT_ID=bazzite-nvidia
+OSTREE_VERSION='44.20260921.0'
+BUILD_ID="Stable (F44.20260921)"
+BOOTLOADER_NAME="Bazzite Stable (F44.20260921)"
+IMAGE_ID="bazzite-nvidia-44.20260921"
+{user}@ryzen-bazzite:/var/home/{user}$ $XDG_CURRENT_DESKTOP
+bash: KDE: command not found
+{user}@ryzen-bazzite:/var/home/{user}$ "$XDG_CURRENT_DESKTOP"
+bash: KDE: command not found
+{user}@ryzen-bazzite:/var/home/{user}$ echo $XDG_CURRENT_DESKTOP
+KDE
+{user}@ryzen-bazzite:/var/home/{user}$ echo $XDG_SESSION_TYPE
+wayland
+{user}@ryzen-bazzite:/var/home/{user}$ rpm-ostree status
+State: idle
+Deployments:
+● ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-nvidia:stable
+                   Digest: sha256:f76202aacc8c4d39a37c8f789f7a7aee30684031732c3c238a9e83483323f92c
+                  Version: 44.20260921 (2026-09-21T05:59:12Z)
+
+  ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-nvidia:stable
+                   Digest: sha256:3b37495c99ed05da8f4d2725d326e9139171a17adefebfa544ddf2f4731cef68
+                  Version: 44.20260916 (2026-09-16T04:42:34Z)
+{user}@ryzen-bazzite:/var/home/{user}$ lspci -nnk | grep -A3 -Ei 'VGA|3D|Display'
+02:00.0 USB controller [0c03]: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset USB 3.1 xHCI Compliant Host Controller [1022:43d5] (rev 01)
+        Subsystem: ASMedia Technology Inc. Device [1b21:1142]
+        Kernel driver in use: xhci_hcd
+        Kernel modules: xhci_pci
+--
+07:00.0 VGA compatible controller [0300]: NVIDIA Corporation GP104 [GeForce GTX 1070] [10de:1b81] (rev a1)
+        Subsystem: EVGA Corporation Device [3842:6173]
+        Kernel driver in use: nvidia
+        Kernel modules: nouveau, nvidia_drm, nvidia
+07:00.1 Audio device [0403]: NVIDIA Corporation GP104 High Definition Audio Controller [10de:10f0] (rev a1)
+        Subsystem: EVGA Corporation Device [3842:6173]
+        Kernel driver in use: snd_hda_intel
+        Kernel modules: snd_hda_intel
+08:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function [1022:148a]
+{user}@ryzen-bazzite:/var/home/{user}$ nvidia-smi
+Mon Sep 21 21:33:15 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce GTX 1070        Off |   00000000:07:00.0  On |                  N/A |
+|  0%   60C    P5             15W /  151W |    1573MiB /   8192MiB |      4%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A           31067      G   /usr/bin/kwin_wayland                   327MiB |
+|    0   N/A  N/A           31147      G   /usr/bin/plasma-keyboard                283MiB |
+|    0   N/A  N/A           31156      G   /usr/bin/Xwayland                        21MiB |
+|    0   N/A  N/A           31227      G   /usr/bin/plasmashell                    217MiB |
+|    0   N/A  N/A           31311      G   ...it-kde-authentication-agent-1          2MiB |
+|    0   N/A  N/A           31452      G   /usr/bin/xwaylandvideobridge              2MiB |
+|    0   N/A  N/A           31575      G   SyncThingy                                2MiB |
+|    0   N/A  N/A           31709      G   ...rack-uuid=3190708988185955192         61MiB |
+|    0   N/A  N/A           31941    C+G   ...rack-uuid=3190708988185955192        175MiB |
+|    0   N/A  N/A           32287      G   /app/lib/firefox/firefox                 75MiB |
+|    0   N/A  N/A           43995    C+G   /app/bin/distroshelf                     41MiB |
+|    0   N/A  N/A           51693      G   .../Citrix/ICAClient/selfservice          2MiB |
+|    0   N/A  N/A           52501      G   ...zoomvdi-universal-plugin/zoom          2MiB |
+|    0   N/A  N/A           52912      G   /usr/bin/plasma-systemmonitor            45MiB |
+|    0   N/A  N/A           52974      G   /usr/bin/kinfocenter                     61MiB |
++-----------------------------------------------------------------------------------------+
+{user}@ryzen-bazzite:/var/home/{user}$ distrobox-list
+ID           | NAME                 | STATUS             | IMAGE                         
+918c9ec98e5e | citrix-ubuntu        | Up 24 minutes      | quay.io/toolbx/ubuntu-toolbox:24.04
+18d5314bb5cc | general-debian       | Exited (0) 9 hours ago | quay.io/toolbx-images/debian-toolbox:13
