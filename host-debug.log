@@ -1,22 +1,34 @@
-📦[{user}@citrix-ubuntu {user}]$ glxinfo -B
-name of display: :0
-display: :0  screen: 0
-direct rendering: Yes
-Memory info (GL_NVX_gpu_memory_info):
-    Dedicated video memory: 8192 MB
-    Total available memory: 8192 MB
-    Currently available dedicated video memory: 6460 MB
-OpenGL vendor string: NVIDIA Corporation
-OpenGL renderer string: NVIDIA GeForce GTX 1070/PCIe/SSE2
-OpenGL core profile version string: 4.6.0 NVIDIA 580.178.04
-OpenGL core profile shading language version string: 4.60 NVIDIA
-OpenGL core profile context flags: (none)
-OpenGL core profile profile mask: core profile
+top - 22:00:19 up  3:07,  3 users,  load average: 2.04, 0.98, 0.81
+Threads:  69 total,   0 running,  69 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.3 us,  0.7 sy,  0.0 ni, 97.8 id,  0.0 wa,  0.2 hi,  0.1 si,  0.0 st 
+top - 22:00:45 up  3:08,  3 users,  load average: 1.41, 0.92, 0.80
+Threads:  69 total,   1 running,  68 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 14.7 us, 12.7 sy,  0.0 ni, 70.4 id,  0.1 wa,  1.9 hi,  0.1 si,  0.0 st 
+MiB Mem :  31994.1 total,  14960.7 free,   7874.0 used,  10219.3 buff/cache     
+MiB Swap:  15997.0 total,  15937.9 free,     59.1 used.  24120.1 avail Mem 
 
-OpenGL version string: 4.6.0 NVIDIA 580.178.04
-OpenGL shading language version string: 4.60 NVIDIA
-OpenGL context flags: (none)
-OpenGL profile mask: (none)
-
-OpenGL ES profile version string: OpenGL ES 3.2 NVIDIA 580.178.04
-OpenGL ES profile shading language version string: OpenGL ES GLSL ES 3.20
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                 
+   6622 {user}   20   0 6128564 575460 294184 S  27.7   1.8   1:07.00 wfica: VC 9                                             
+   6548 {user}   20   0 6128564 575460 294184 R  21.0   1.8   1:18.27 llvmpipe-2                                              
+   6546 {user}   20   0 6128564 575460 294184 S  20.8   1.8   1:18.60 llvmpipe-0                                              
+   6547 {user}   20   0 6128564 575460 294184 S  20.8   1.8   1:18.35 llvmpipe-1                                              
+   6549 {user}   20   0 6128564 575460 294184 S  20.8   1.8   1:18.29 llvmpipe-3                                              
+   6550 {user}   20   0 6128564 575460 294184 S  20.6   1.8   1:18.13 llvmpipe-4                                              
+   6551 {user}   20   0 6128564 575460 294184 S  20.6   1.8   1:17.98 llvmpipe-5                                              
+   6552 {user}   20   0 6128564 575460 294184 S  20.6   1.8   1:17.68 llvmpipe-6                                              
+   6557 {user}   20   0 6128564 575460 294184 S  20.6   1.8   1:14.39 llvmpipe-11                                             
+   6553 {user}   20   0 6128564 575460 294184 S  20.4   1.8   1:16.98 llvmpipe-7                                              
+   6554 {user}   20   0 6128564 575460 294184 S  20.2   1.8   1:15.29 llvmpipe-8                                              
+   6555 {user}   20   0 6128564 575460 294184 S  19.6   1.8   1:12.63 llvmpipe-9                                              
+   6556 {user}   20   0 6128564 575460 294184 S  18.4   1.8   1:09.52 llvmpipe-10                                             
+   6523 {user}   20   0 6128564 575460 294184 S   2.0   1.8   1:51.24 wfica                                                   
+   6589 {user}   20   0 6128564 575460 294184 S   0.6   1.8   0:15.40 threaded-ml                                             
+   6588 {user}   20   0 6128564 575460 294184 S   0.4   1.8   0:08.94 wfica: VC 3                                             
+   6635 {user}   20   0 6128564 575460 294184 S   0.2   1.8   0:01.70 wfica                                                   
+   6713 {user}   20   0 6128564 575460 294184 S   0.2   1.8   0:01.01 wfica: VC 3                                             
+   6721 {user}   20   0 6128564 575460 294184 S   0.2   1.8   0:01.71 wfica                                                   
+   6526 {user}   20   0 6128564 575460 294184 S   0.0   1.8   0:00.00 wfica                                                   
+   6527 {user}   20   0 6128564 575460 294184 S   0.0   1.8   0:00.04 grpc_global_tim                                         
+   6528 {user}   20   0 6128564 575460 294184 S   0.0   1.8   0:00.34 event_engine                                            
+   6529 {user}   20   0 6128564 575460 294184 S   0.0   1.8   0:00.31 event_engine                                            
+   6530 {user}   20   0 6128564 575460 294184 S   0.0   1.8   0:00.22 event_engine           
