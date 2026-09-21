@@ -1,95 +1,34 @@
-📦[{user}@citrix-ubuntu {user}]$ ls -laF ~/.ICAClient/logs/
-total 35608
-drwxrwxrwx. 1 {user} {user}     3682 Sep 21 21:08 ./
-drwx------. 1 {user} {user}      770 Sep 21 21:09 ../
--rw-r--r--. 1 {user} {user} 10388001 Sep 15 23:28 AuthManSvr-10372.log
--rw-r--r--. 1 {user} {user}    16197 Sep 15 22:44 AuthManSvr-24900.log
--rw-r--r--. 1 {user} {user}    16197 Sep 15 22:52 AuthManSvr-33709.log
--rw-r--r--. 1 {user} {user}    16197 Sep 15 22:57 AuthManSvr-34862.log
--rw-r--r--. 1 {user} {user}    16197 Sep 15 23:11 AuthManSvr-5854.log
--rw-r--r--. 1 {user} {user}    16197 Sep 15 23:09 AuthManSvr-5865.log
--rw-r--r--. 1 {user} {user}  1580092 Sep 21 20:48 AuthManSvr-6033.log
--rw-r--r--. 1 {user} {user}  1216059 Sep 17 12:09 AuthManSvr-6038.log
--rw-r--r--. 1 {user} {user}  2224139 Sep 17 13:15 AuthManSvr-6043.log
--rw-r--r--. 1 {user} {user}  1514804 Sep 21 12:06 AuthManSvr-6048.log
--rw-r--r--. 1 {user} {user}  1284413 Sep 21 10:49 AuthManSvr-6049.log
--rw-r--r--. 1 {user} {user}  1236917 Sep 21 21:10 AuthManSvr-6051.log
--rw-r--r--. 1 {user} {user}  3243643 Sep 21 21:07 AuthManSvr-6076.log
--rw-r--r--. 1 {user} {user}  2899192 Sep 16 21:15 AuthManSvr-6088.log
--rw-r--r--. 1 {user} {user}  1308550 Sep 17 14:13 AuthManSvr-6108.log
--rw-r--r--. 1 {user} {user}  2372948 Sep 17 16:26 AuthManSvr-6139.log
--rw-r--r--. 1 {user} {user}  1237277 Sep 21 11:24 AuthManSvr-6142.log
--rw-r--r--. 1 {user} {user}  2218155 Sep 17 13:06 AuthManSvr-6150.log
--rw-r--r--. 1 {user} {user}  1407101 Sep 21 12:52 AuthManSvr-6876.log
-lrwxrwxrwx. 1 {user} {user}       19 Sep 21 20:52 AuthManSvr.last -> AuthManSvr-6076.log
-lrwxrwxrwx. 1 {user} {user}       19 Sep 21 21:08 AuthManSvr.latest -> AuthManSvr-6051.log
--rw-r--r--. 1 {user} {user}      431 Sep 15 23:21 AuthManager-10372.log
--rw-r--r--. 1 {user} {user}      431 Sep 15 22:44 AuthManager-24900.log
--rw-r--r--. 1 {user} {user}      431 Sep 15 22:52 AuthManager-33709.log
--rw-r--r--. 1 {user} {user}      431 Sep 15 22:57 AuthManager-34862.log
--rw-r--r--. 1 {user} {user}      431 Sep 15 23:11 AuthManager-5854.log
--rw-r--r--. 1 {user} {user}      431 Sep 15 23:09 AuthManager-5865.log
--rw-r--r--. 1 {user} {user}      431 Sep 21 18:55 AuthManager-6033.log
--rw-r--r--. 1 {user} {user}      431 Sep 17 12:08 AuthManager-6038.log
--rw-r--r--. 1 {user} {user}     1103 Sep 17 13:14 AuthManager-6043.log
--rw-r--r--. 1 {user} {user}      431 Sep 21 11:29 AuthManager-6048.log
--rw-r--r--. 1 {user} {user}      431 Sep 21 10:36 AuthManager-6049.log
--rw-r--r--. 1 {user} {user}      431 Sep 21 21:08 AuthManager-6051.log
--rw-r--r--. 1 {user} {user}      431 Sep 21 20:52 AuthManager-6076.log
--rw-r--r--. 1 {user} {user}      431 Sep 16 10:41 AuthManager-6088.log
--rw-r--r--. 1 {user} {user}      431 Sep 17 14:11 AuthManager-6108.log
--rw-r--r--. 1 {user} {user}      431 Sep 17 14:26 AuthManager-6139.log
--rw-r--r--. 1 {user} {user}      431 Sep 21 11:24 AuthManager-6142.log
--rw-r--r--. 1 {user} {user}      431 Sep 17 12:57 AuthManager-6150.log
--rw-r--r--. 1 {user} {user}      765 Sep 17 13:14 AuthManager-6202.log
--rw-r--r--. 1 {user} {user}      765 Sep 17 10:19 AuthManager-6207.log
--rw-r--r--. 1 {user} {user}      431 Sep 21 12:07 AuthManager-6876.log
-lrwxrwxrwx. 1 {user} {user}       20 Sep 21 20:52 AuthManager.last -> AuthManager-6076.log
-lrwxrwxrwx. 1 {user} {user}       20 Sep 21 21:08 AuthManager.latest -> AuthManager-6051.log
--rw-r--r--. 1 {user} {user}    68494 Sep 15 23:22 PrimaryAuthManager-10424.log
--rw-r--r--. 1 {user} {user}    68494 Sep 16 15:22 PrimaryAuthManager-11053.log
--rw-r--r--. 1 {user} {user}    68494 Sep 16 16:17 PrimaryAuthManager-12910.log
--rw-r--r--. 1 {user} {user}    68494 Sep 21 18:55 PrimaryAuthManager-6154.log
--rw-r--r--. 1 {user} {user}    68494 Sep 17 14:13 PrimaryAuthManager-6159.log
--rw-r--r--. 1 {user} {user}    68494 Sep 17 12:08 PrimaryAuthManager-6177.log
--rw-r--r--. 1 {user} {user}    68494 Sep 21 10:37 PrimaryAuthManager-6188.log
--rw-r--r--. 1 {user} {user}    68494 Sep 21 21:09 PrimaryAuthManager-6191.log
--rw-r--r--. 1 {user} {user}    68494 Sep 21 10:51 PrimaryAuthManager-6192.log
--rw-r--r--. 1 {user} {user}    68494 Sep 21 20:52 PrimaryAuthManager-6196.log
--rw-r--r--. 1 {user} {user}    57395 Sep 17 13:14 PrimaryAuthManager-6202.log
--rw-r--r--. 1 {user} {user}    68494 Sep 21 11:30 PrimaryAuthManager-6204.log
--rw-r--r--. 1 {user} {user}    57395 Sep 17 10:19 PrimaryAuthManager-6207.log
--rw-r--r--. 1 {user} {user}    68494 Sep 17 14:23 PrimaryAuthManager-6210.log
--rw-r--r--. 1 {user} {user}    68494 Sep 16 10:43 PrimaryAuthManager-6228.log
--rw-r--r--. 1 {user} {user}    46878 Sep 17 14:26 PrimaryAuthManager-6257.log
--rw-r--r--. 1 {user} {user}    68494 Sep 21 11:24 PrimaryAuthManager-6263.log
--rw-r--r--. 1 {user} {user}    68494 Sep 17 12:57 PrimaryAuthManager-6309.log
--rw-r--r--. 1 {user} {user}    68494 Sep 17 13:14 PrimaryAuthManager-6353.log
--rw-r--r--. 1 {user} {user}    68494 Sep 17 10:19 PrimaryAuthManager-6359.log
--rw-r--r--. 1 {user} {user}    68494 Sep 17 14:27 PrimaryAuthManager-6461.log
--rw-r--r--. 1 {user} {user}    68494 Sep 21 12:08 PrimaryAuthManager-7035.log
--rw-r--r--. 1 {user} {user}    68494 Sep 21 12:00 PrimaryAuthManager-7141.log
--rw-r--r--. 1 {user} {user}    68494 Sep 16 11:23 PrimaryAuthManager-7294.log
--rw-r--r--. 1 {user} {user}    68494 Sep 17 11:14 PrimaryAuthManager-7923.log
--rw-r--r--. 1 {user} {user}    68494 Sep 21 20:04 PrimaryAuthManager-7937.log
--rw-r--r--. 1 {user} {user}    68494 Sep 21 12:46 PrimaryAuthManager-8318.log
--rw-r--r--. 1 {user} {user}    68494 Sep 17 16:25 PrimaryAuthManager-8779.log
--rw-r--r--. 1 {user} {user}    68494 Sep 21 20:42 PrimaryAuthManager-8981.log
--rw-r--r--. 1 {user} {user}    36273 Sep 17 12:08 PrimaryAuthManager-9098.log
--rw-r--r--. 1 {user} {user}    68494 Sep 16 14:27 PrimaryAuthManager-9887.log
-lrwxrwxrwx. 1 {user} {user}       27 Sep 21 20:52 PrimaryAuthManager.last -> PrimaryAuthManager-6196.log
-lrwxrwxrwx. 1 {user} {user}       27 Sep 21 21:08 PrimaryAuthManager.latest -> PrimaryAuthManager-6191.log
--rw-r--r--. 1 {user} {user}      693 Sep 17 13:29 ServiceRecord_7068_2026-09-17_13_29_54_+0200.log
-lrwxrwxrwx. 1 {user} {user}       39 Sep 17 13:29 dslog.latest -> /home/{user}/.ICAClient/logs/dslog7058
--rw-r--r--. 1 {user} {user}     9479 Sep 17 13:30 dslog7058
-drwxr-xr-x. 1 {user} {user}      264 Sep 17 13:42 issuereproduce/
--rw-r--r--. 1 {user} {user}     1586 Sep 17 13:25 userActivitylog
-📦[{user}@citrix-ubuntu {user}]$ ls -laF /var/log/citrix/
-total 464880
-drwxr-xr-x. 1 citrixlog nogroup       146 Sep 21 22:05 ./
-drwxrwxr-x. 1 root      syslog        160 Sep 15 23:19 ../
--rw-rw-rw-. 1 citrixlog nogroup       536 Sep 21 21:10 .ctxcwalogconf
-srw-rw-rw-. 1 citrixlog nogroup         0 Sep 21 21:08 .ctxcwalogsocket=
--rw-r--r--. 1 citrixlog nogroup  56531532 Sep 21 22:06 ICAClient.log
--rw-r--r--. 1 citrixlog nogroup 209747472 Sep 21 22:05 ICAClient.log.1
--rw-r--r--. 1 citrixlog nogroup 209749637 Sep 21 22:01 ICAClient.log.2
+top - 22:00:19 up  3:07,  3 users,  load average: 2.04, 0.98, 0.81
+Threads:  69 total,   0 running,  69 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.3 us,  0.7 sy,  0.0 ni, 97.8 id,  0.0 wa,  0.2 hi,  0.1 si,  0.0 st 
+top - 22:00:45 up  3:08,  3 users,  load average: 1.41, 0.92, 0.80
+Threads:  69 total,   1 running,  68 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 14.7 us, 12.7 sy,  0.0 ni, 70.4 id,  0.1 wa,  1.9 hi,  0.1 si,  0.0 st 
+MiB Mem :  31994.1 total,  14960.7 free,   7874.0 used,  10219.3 buff/cache     
+MiB Swap:  15997.0 total,  15937.9 free,     59.1 used.  24120.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                 
+   6622 {user}   20   0 6128564 575460 294184 S  27.7   1.8   1:07.00 wfica: VC 9                                             
+   6548 {user}   20   0 6128564 575460 294184 R  21.0   1.8   1:18.27 llvmpipe-2                                              
+   6546 {user}   20   0 6128564 575460 294184 S  20.8   1.8   1:18.60 llvmpipe-0                                              
+   6547 {user}   20   0 6128564 575460 294184 S  20.8   1.8   1:18.35 llvmpipe-1                                              
+   6549 {user}   20   0 6128564 575460 294184 S  20.8   1.8   1:18.29 llvmpipe-3                                              
+   6550 {user}   20   0 6128564 575460 294184 S  20.6   1.8   1:18.13 llvmpipe-4                                              
+   6551 {user}   20   0 6128564 575460 294184 S  20.6   1.8   1:17.98 llvmpipe-5                                              
+   6552 {user}   20   0 6128564 575460 294184 S  20.6   1.8   1:17.68 llvmpipe-6                                              
+   6557 {user}   20   0 6128564 575460 294184 S  20.6   1.8   1:14.39 llvmpipe-11                                             
+   6553 {user}   20   0 6128564 575460 294184 S  20.4   1.8   1:16.98 llvmpipe-7                                              
+   6554 {user}   20   0 6128564 575460 294184 S  20.2   1.8   1:15.29 llvmpipe-8                                              
+   6555 {user}   20   0 6128564 575460 294184 S  19.6   1.8   1:12.63 llvmpipe-9                                              
+   6556 {user}   20   0 6128564 575460 294184 S  18.4   1.8   1:09.52 llvmpipe-10                                             
+   6523 {user}   20   0 6128564 575460 294184 S   2.0   1.8   1:51.24 wfica                                                   
+   6589 {user}   20   0 6128564 575460 294184 S   0.6   1.8   0:15.40 threaded-ml                                             
+   6588 {user}   20   0 6128564 575460 294184 S   0.4   1.8   0:08.94 wfica: VC 3                                             
+   6635 {user}   20   0 6128564 575460 294184 S   0.2   1.8   0:01.70 wfica                                                   
+   6713 {user}   20   0 6128564 575460 294184 S   0.2   1.8   0:01.01 wfica: VC 3                                             
+   6721 {user}   20   0 6128564 575460 294184 S   0.2   1.8   0:01.71 wfica                                                   
+   6526 {user}   20   0 6128564 575460 294184 S   0.0   1.8   0:00.00 wfica                                                   
+   6527 {user}   20   0 6128564 575460 294184 S   0.0   1.8   0:00.04 grpc_global_tim                                         
+   6528 {user}   20   0 6128564 575460 294184 S   0.0   1.8   0:00.34 event_engine                                            
+   6529 {user}   20   0 6128564 575460 294184 S   0.0   1.8   0:00.31 event_engine                                            
+   6530 {user}   20   0 6128564 575460 294184 S   0.0   1.8   0:00.22 event_engine           
